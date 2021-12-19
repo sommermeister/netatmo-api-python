@@ -21,6 +21,3 @@ MANIFEST*
 *.parquet
 *.pkl
 *.xlsx
-
-.netatmo.credentials
-*.credentials
