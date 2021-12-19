@@ -1,5 +1,7 @@
 .spyproject/
 
+.netatmo.credentials
+
 build/
 
 dist/

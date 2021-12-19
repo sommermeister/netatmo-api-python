@@ -62,7 +62,7 @@ cred = {                           # You can hard code authentication informatio
 
 # Other authentication setup management (optionals)
 
-CREDENTIALS = expanduser("~/.netatmo.credentials")
+CREDENTIALS = expanduser(".netatmo.credentials")
 
 def getParameter(key, default):
     return getenv(key, default[key])
@@ -82,7 +82,7 @@ if platform.system() == "Windows" and getenv("USERNAME", None):
 
 _CLIENT_ID     = getParameter("CLIENT_ID", cred)
 _CLIENT_SECRET = getParameter("CLIENT_SECRET", cred)
-_USERNAME      = getParameter("USERNAME", cred)
+_USERNAME      = cred["USERNAME"] # getParameter("USERNAME", cred) # skip reading USERNAME env variable because on Windows this is set to the Windows account name "David"
 _PASSWORD      = getParameter("PASSWORD", cred)
 
 #########################################################################
