@@ -1,6 +1,6 @@
 .spyproject/
 
-.netatmo.credentials
+.my.netatmo.credentials
 
 build/
 
@@ -21,3 +21,4 @@ MANIFEST*
 *.parquet
 *.pkl
 *.xlsx
+

@@ -62,7 +62,7 @@ cred = {                           # You can hard code authentication informatio
 
 # Other authentication setup management (optionals)
 
-CREDENTIALS = expanduser(".netatmo.credentials")
+CREDENTIALS = expanduser(".my.netatmo.credentials")
 
 def getParameter(key, default):
     return getenv(key, default[key])
