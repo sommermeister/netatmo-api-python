@@ -22,3 +22,4 @@ MANIFEST*
 *.pkl
 *.xlsx
 
+.netatmo.credentials
